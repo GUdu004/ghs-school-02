@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guided Hearts Schools | Spiritual Uprightness & Academic Excellence</title>
+  <meta name="description"
+    content="Guided Hearts Schools integrates high national academic standards with profound Islamic tarbiyyah, located in a safe gated estate adjacent to the community mosque.">
+
+  <!-- Hallmark Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="/src/css/tokens.css">
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/typography.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/pages.css">
+</head>
+
+<body data-page-intent="general">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- N1b Canonical Institutional Navigation -->
+  <header class="nav-header" id="nav-header">
+    <div class="container nav-inner">
+      <a href="/index.html" class="nav-brand" aria-label="Guided Hearts Schools Home">
+        <img src="/assets/brand/ghs_logo.png" alt="Guided Hearts Schools" class="nav-brand-logo" height="60">
+      </a>
+
+      <nav class="nav-center" aria-label="Main Navigation">
+        <a href="/index.html" class="nav-link is-active">Home</a>
+
+        <!-- About Dropdown -->
+        <div class="nav-item nav-item--dropdown">
+          <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
+            About Us
+            <svg class="nav-caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 1L5 5L9 1" />
+            </svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/about.html" class="nav-drop-item" role="menuitem">
+              <span class="nav-drop-title">Overview &amp; Leadership</span>
+              <span class="nav-drop-desc">Mission, pedagogy &amp; 13+ years leadership</span>
+            </a>
+            <a href="/campus.html" class="nav-drop-item" role="menuitem">
+              <span class="nav-drop-title">Campus &amp; Safety Gallery</span>
+              <span class="nav-drop-desc">Peace Haven Estate &amp; safe mosque corridor</span>
+            </a>
+            <a href="/careers.html" class="nav-drop-item" role="menuitem">
+              <span class="nav-drop-title">Careers &amp; Vacancies</span>
+              <span class="nav-drop-desc">Faculty openings &amp; institutional scaling</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Academics Dropdown -->
+        <div class="nav-item nav-item--dropdown">
+          <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
+            Academics
+            <svg class="nav-caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 1L5 5L9 1" />
+            </svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/academics.html" class="nav-drop-item" role="menuitem">
+              <span class="nav-drop-title">Dual Curriculum Tracks</span>
+              <span class="nav-drop-desc">Hybrid Western &amp; Islamic vs. Full Islamic</span>
+            </a>
+            <a href="/student-life.html" class="nav-drop-item" role="menuitem">
+              <span class="nav-drop-title">Student Life &amp; Ethos</span>
+              <span class="nav-drop-desc">Daily spiritual rhythm, Tarbiyyah &amp; Adab</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/news.html" class="nav-link">News</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/admissions.html" class="btn btn--outline">Admissions</a>
+        <a href="https://wa.me/2348030000000" class="btn btn--accent" data-whatsapp-intent="general">Inquire on
+          WhatsApp</a>
+        <button class="nav-toggle" aria-label="Open Navigation Menu" aria-expanded="false"
+          aria-controls="mobile-drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-panel">
+      <div class="mobile-drawer-header">
+        <span class="nav-brand-name">Menu</span>
+        <button class="mobile-drawer-close" aria-label="Close Navigation Menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="/index.html" class="mobile-nav-link is-active">Home</a></li>
+        <li class="mobile-nav-group">
+          <span class="mobile-nav-heading">About Guided Hearts</span>
+          <a href="/about.html" class="mobile-nav-sublink">Overview &amp; Leadership</a>
+          <a href="/campus.html" class="mobile-nav-sublink">Campus &amp; Safety Gallery</a>
+          <a href="/careers.html" class="mobile-nav-sublink">Careers &amp; Vacancies</a>
+        </li>
+        <li class="mobile-nav-group">
+          <span class="mobile-nav-heading">Academics &amp; Culture</span>
+          <a href="/academics.html" class="mobile-nav-sublink">Dual Curriculum Tracks</a>
+          <a href="/student-life.html" class="mobile-nav-sublink">Student Life &amp; Ethos</a>
+        </li>
+        <li><a href="/admissions.html" class="mobile-nav-link">Admissions &amp; Fees</a></li>
+        <li><a href="/news.html" class="mobile-nav-link">News &amp; Announcements</a></li>
+        <li><a href="/contact.html" class="mobile-nav-link">Contact &amp; Directions</a></li>
+        <li><a href="/legal.html" class="mobile-nav-link">Child Safeguarding</a></li>
+      </ul>
+      <a href="https://wa.me/2348030000000" class="btn btn--whatsapp" data-whatsapp-intent="general"
+        style="width: 100%;">
+        Chat with Admissions Officer
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Redesigned Panoramic Hero Section -->
+    <section class="hero-section hero-section--panoramic hero-section--home">
+      <div class="hero-backdrop" aria-hidden="true">
+        <picture>
+          <!-- Desktop & Tablet Landscape: Panoramic soft-fade image -->
+          <source media="(min-width: 900px)" srcset="/assets/images/hero_image_01.webp" type="image/webp">
+          <source media="(min-width: 900px)" srcset="/assets/images/hero_image_01.png" type="image/png">
+          <!-- Mobile & Small Tablet: Focused 4:3 campus sanctuary image -->
+          <img src="/assets/images/hero_campus_sanctuary.jpg"
+            alt="Guided Hearts Schools campus with Nigerian pupils and educator walking in safe courtyard near community mosque"
+            class="hero-backdrop-img" width="700" height="525" fetchpriority="high">
+        </picture>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="eyebrow">Academic Session 2026/2027 &bull; Admissions Open</span>
+          <h1 class="display-hero hero-headline">Spiritual Uprightness &amp; Academic Excellence.</h1>
+          <p class="lede hero-lede">
+            Guided Hearts Schools eliminates the compromise between secular scholastic rigor and authentic Islamic
+            values. Located in a secure gated estate with direct, safe walking access to the neighborhood mosque.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/2348030000000" class="btn btn--accent" data-whatsapp-intent="admissions"
+              id="hero-primary-cta">
+              Inquire via WhatsApp
+            </a>
+            <a href="/academics.html" class="btn btn--outline" id="hero-secondary-cta">
+              Explore Dual Curriculum
+            </a>
+          </div>
+
+          <div class="hero-proof-strip">
+            <div class="hero-proof-item">
+              <span class="hero-proof-number">13+ Years</span>
+              <span class="hero-proof-label">Pedagogy Leadership</span>
+            </div>
+            <div class="hero-proof-item">
+              <span class="hero-proof-number">7 Meters</span>
+              <span class="hero-proof-label">From Central Mosque</span>
+            </div>
+            <div class="hero-proof-item">
+              <span class="hero-proof-number">1:12 Ratio</span>
+              <span class="hero-proof-label">Teacher-Student Focused Mentorship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maternal Assurance & Value Pillars -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <span class="eyebrow">Institutional Foundation</span>
+            <h2 class="display-2">Designed for the Discerning Mother.</h2>
+          </div>
+          <p class="prose">
+            Every operational and architectural choice at Guided Hearts is engineered around maternal priorities:
+            absolute physical protection, moral sanctuary, and verifiable national examination readiness.
+          </p>
+        </div>
+
+        <div class="grid-track-safe"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6);">
+          <div class="leader-card">
+            <span class="leader-role">Pillar 01 // Physical Security</span>
+            <h3 class="display-3 leader-name">Insulated Gated Estate</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              Our campus resides inside Peace Haven Estate, featuring round-the-clock manned gatehouses, strict visitor
+              vetting, and zero exposure to bustling commercial thoroughfares.
+            </p>
+          </div>
+
+          <div class="leader-card">
+            <span class="leader-role">Pillar 02 // Spiritual Sanctity</span>
+            <h3 class="display-3 leader-name">Direct Mosque Proximity</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              Only 7 meters from the neighborhood central mosque through an internal pedestrian corridor, enabling
+              pupils to observe daily congregational Dhuhr prayer with reverence.
+            </p>
+          </div>
+
+          <div class="leader-card">
+            <span class="leader-role">Pillar 03 // Scholastic Mastery</span>
+            <h3 class="display-3 leader-name">Dual-Curriculum Rigor</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              Offering distinct tracks: Full Islamic scholarship or a balanced Western & Islamic hybrid. Standardized
+              national curriculum benchmarks are met and surpassed in both tracks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dual Curriculum Teaser -->
+    <section class="section-pad"
+      style="background-color: var(--color-paper-muted); border-block: 1px solid var(--color-paper-border);">
+      <div class="container">
+        <div class="section-head" style="text-align: center; max-width: 640px; margin-inline: auto;">
+          <span class="eyebrow" style="justify-content: center;">Educational Pathways</span>
+          <h2 class="display-2">Two Distinct Tracks. Zero Compromise.</h2>
+          <p class="lede" style="margin-top: var(--space-3);">
+            We ensure that spiritual tarbiyyah enhances rather than limits academic capability.
+          </p>
+        </div>
+
+        <div class="curriculum-grid">
+          <div class="curriculum-card" data-track="hybrid">
+            <span class="curriculum-badge">Track A &bull; Most Popular</span>
+            <h3 class="display-3" style="margin-bottom: var(--space-3);">Hybrid Western &amp; Islamic Track</h3>
+            <p class="prose" style="font-size: var(--text-sm); margin-bottom: var(--space-6);">
+              Designed for families seeking complete preparation for national and international examinations alongside
+              Quran memorization, basic Arabic fluency, and daily tarbiyyah.
+            </p>
+            <ul
+              style="list-style: none; display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-8); font-size: var(--text-sm); color: var(--color-ink);">
+              <li>&#10003; Full National STEM, English & Mathematics Curriculum</li>
+              <li>&#10003; Structured Quranic Tahfeez & Tajweed Circles</li>
+              <li>&#10003; Conversational Arabic & Islamic Manners (Adab)</li>
+              <li>&#10003; Digital Literacy & Practical Sciences</li>
+            </ul>
+            <a href="/academics.html" class="btn btn--accent" style="margin-top: auto;">Compare Hybrid Details</a>
+          </div>
+
+          <div class="curriculum-card" data-track="islamic">
+            <span class="curriculum-badge"
+              style="background-color: var(--color-paper-muted); color: var(--color-islamic-forest);">Track B &bull;
+              Classical Depth</span>
+            <h3 class="display-3" style="margin-bottom: var(--space-3);">Full Islamic Scholarship Track</h3>
+            <p class="prose" style="font-size: var(--text-sm); margin-bottom: var(--space-6);">
+              An intensive immersive track focused on accelerated Quranic memorization, advanced Arabic syntax, and
+              foundational Islamic jurisprudence (Fiqh & Hadith) while upholding key literacy and numeracy.
+            </p>
+            <ul
+              style="list-style: none; display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-8); font-size: var(--text-sm); color: var(--color-ink);">
+              <li>&#10003; Intensive Tahfeez Program with Ijazah Preparation</li>
+              <li>&#10003; Arabic Language Immersion</li>
+              <li>&#10003; Essential Mathematics & English Literacy</li>
+              <li>&#10003; Daily Character Mentorship (Akhlaq)</li>
+            </ul>
+            <a href="/academics.html" class="btn btn--outline" style="margin-top: auto;">Explore Islamic Track</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Credential Block -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <span class="eyebrow">Trust Architecture</span>
+            <h2 class="display-2">Experienced Pedagogy &amp; Strategic Oversight.</h2>
+          </div>
+          <p class="prose">
+            Founded on over a decade of proven academic consulting and institutional governance, Guided Hearts is guided
+            by seasoned educators who understand both state benchmarks and cultural sanctity.
+          </p>
+        </div>
+
+        <div class="leadership-grid">
+          <div class="leader-card leader-card--profile">
+            <div class="leader-card__photo-wrap">
+              <picture>
+                <source srcset="/assets/images/leader_adeniyi_ibrahim.webp" type="image/webp">
+                <img src="/assets/images/leader_adeniyi_ibrahim.jpg" alt="Brother Adeniyi Ibrahim, Academic Director &amp; Pedagogy Lead" class="leader-card__photo" width="400" height="400" loading="lazy">
+              </picture>
+            </div>
+            <div class="leader-card__body">
+              <span class="leader-role">Academic Director</span>
+              <h3 class="leader-name">Adeniyi Ibrahim</h3>
+              <span class="leader-tenure">13+ Years Educational Consulting</span>
+              <p class="prose" style="font-size: var(--text-sm);">
+                Directs pedagogy, teacher development, and standardized curriculum integration, ensuring every child
+                achieves measurable mastery.
+              </p>
+            </div>
+          </div>
+
+          <div class="leader-card leader-card--profile">
+            <div class="leader-card__photo-wrap">
+              <picture>
+                <source srcset="/assets/images/leader_rauf_hassan.webp" type="image/webp">
+                <img src="/assets/images/leader_rauf_hassan.jpg" alt="Brother Rauf Hassan, Governance &amp; School Culture Lead" class="leader-card__photo" width="400" height="400" loading="lazy">
+              </picture>
+            </div>
+            <div class="leader-card__body">
+              <span class="leader-role">Governance &amp; School Culture</span>
+              <h3 class="leader-name">Rauf Hassan</h3>
+              <span class="leader-tenure">Strategic Operations Lead</span>
+              <p class="prose" style="font-size: var(--text-sm);">
+                Stewards the Islamic ethos, safeguarding frameworks, and daily spiritual discipline throughout all grade
+                levels.
+              </p>
+            </div>
+          </div>
+
+          <div class="leader-card leader-card--profile">
+            <div class="leader-card__photo-wrap">
+              <picture>
+                <source srcset="/assets/images/leader_nurudeen_popoola.webp" type="image/webp">
+                <img src="/assets/images/leader_nurudeen_popoola.jpg" alt="Brother Nurudeen Popoola, Finance &amp; Strategy Lead" class="leader-card__photo" width="400" height="400" loading="lazy">
+              </picture>
+            </div>
+            <div class="leader-card__body">
+              <span class="leader-role">Finance &amp; Strategy</span>
+              <h3 class="leader-name">Nurudeen Popoola</h3>
+              <span class="leader-tenure">Institutional Governance</span>
+              <p class="prose" style="font-size: var(--text-sm);">
+                Oversees capital allocation, facility expansion, and institutional scaling toward our 2-year primary and
+                boarding roadmap.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: var(--space-10); text-align: center;">
+          <a href="/about.html" class="btn btn--outline">Read Complete Institutional Mission &amp; Profiles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Module -->
+    <section class="section-pad"
+      style="background-color: var(--color-paper-muted); border-top: 1px solid var(--color-paper-border);">
+      <div class="container container--narrow">
+        <div class="section-head" style="text-align: center;">
+          <span class="eyebrow" style="justify-content: center;">Parent Inquiries</span>
+          <h2 class="display-2">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="accordion" id="home-faq">
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-1">
+              <span>How do you guarantee physical security for pupils?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" id="faq-1">
+              <div class="accordion-content">
+                Guided Hearts Schools is situated inside Peace Haven Estate, an established gated community with manned
+                access control, monitored perimeters, and zero direct exposure to major traffic. Student drop-off and
+                pick-up are strictly verified.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-2">
+              <span>How are students transported to the mosque for prayer?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" id="faq-2">
+              <div class="accordion-content">
+                The campus is situated just 7 meters from the community central mosque. Students walk in escorted,
+                structured cohorts through an internal, traffic-free estate path under continuous teacher supervision
+                for Dhuhr prayer.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-3">
+              <span>Will my child be prepared for national transition exams in the Hybrid Track?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" id="faq-3">
+              <div class="accordion-content">
+                Yes. Our Hybrid Track adheres completely to high national curriculum benchmarks in English, Mathematics,
+                General Sciences, and Social Studies, preparing pupils thoroughly for state and federal entrance
+                examinations while maintaining high Quranic proficiency.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-4">
+              <span>What is the application procedure for prospective families?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" id="faq-4">
+              <div class="accordion-content">
+                Parents can initiate an application instantly via our WhatsApp admissions channel or online portal,
+                schedule an in-person campus and mosque tour, attend a brief diagnostic pupil assessment, and finalize
+                enrollment.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-8);">
+          <a href="https://wa.me/2348030000000" class="btn btn--whatsapp" data-whatsapp-intent="admissions">
+            Ask Admissions a Direct Question on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ft5 Statement Footer -->
+  <footer class="foot-stmt">
+    <div class="container">
+      <p class="foot-stmt__line">Raising scholars of moral uprightness and intellectual distinction.</p>
+
+      <div class="foot-stmt__grid">
+        <div>
+          <h4 class="foot-stmt__col-title">Campus &bull; Peace Haven Estate</h4>
+          <p class="prose"
+            style="font-size: var(--text-sm); color: oklch(0.820 0.015 85); margin-bottom: var(--space-3);">
+            Peace Haven Gated Estate, Off Central Mosque Road,<br>Lagos, Nigeria.
+          </p>
+          <p class="prose" style="font-size: var(--text-xs); color: var(--color-accent);">
+            &bull; 7m Safe Mosque Walking Corridor<br>&bull; 24/7 Security Gatehouse
+          </p>
+        </div>
+
+        <div>
+          <h4 class="foot-stmt__col-title">Academic Tracks</h4>
+          <ul class="foot-stmt__links">
+            <li><a href="/academics.html" class="foot-stmt__link">Hybrid Western & Islamic</a></li>
+            <li><a href="/academics.html" class="foot-stmt__link">Full Islamic Scholarship</a></li>
+            <li><a href="/academics.html" class="foot-stmt__link">Tahfeez & Arabic Curriculum</a></li>
+            <li><a href="/student-life.html" class="foot-stmt__link">Tarbiyyah & Akhlaq</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="foot-stmt__col-title">Admissions & Portal</h4>
+          <ul class="foot-stmt__links">
+            <li><a href="/admissions.html" class="foot-stmt__link">Admission Roadmap</a></li>
+            <li><a href="/admissions.html#tuition" class="foot-stmt__link">Tuition & Schedule</a></li>
+            <li><a href="/campus.html" class="foot-stmt__link">Campus Gallery & Tour</a></li>
+            <li><a href="/careers.html" class="foot-stmt__link">Teaching Vacancies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="foot-stmt__col-title">Direct Contact</h4>
+          <ul class="foot-stmt__links">
+            <li><a href="https://wa.me/2348030000000" class="foot-stmt__link" data-whatsapp-intent="general">WhatsApp
+                Admissions</a></li>
+            <li><a href="/contact.html" class="foot-stmt__link">+234 (0) 803 000 0000</a></li>
+            <li><a href="/news.html" class="foot-stmt__link">Mosque Announcements</a></li>
+            <li><a href="/legal.html" class="foot-stmt__link">Child Safeguarding</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-stmt__meta">
+        <span>&copy; 2026 Guided Hearts Schools. All rights reserved.</span>
+        <span>Peace Haven Gated Estate, Lagos. Regulated Faith-Based Institution.</span>
+        <a href="/legal.html" style="color: inherit; text-decoration: underline;">Privacy Policy &bull; Child
+          Safeguarding Code</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Persistent Floating WhatsApp Widget -->
+  <a href="https://wa.me/2348030000000" class="whatsapp-widget" data-whatsapp-intent="general"
+    aria-label="Chat with Guided Hearts Admissions on WhatsApp">
+    <svg class="whatsapp-widget-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.074-2.18-.54-1.894-.783-3.125-2.723-3.22-2.85-.095-.128-.769-.997-.769-1.929 0-.931.488-1.391.662-1.579.174-.188.38-.235.506-.235.126 0 .253.002.364.007.119.006.277-.045.435.334.162.388.552 1.344.6 1.442.049.098.082.213.016.342-.066.13-.099.21-.197.324-.099.115-.208.257-.297.345-.102.102-.208.213-.09.417.119.204.529.873 1.135 1.413.781.696 1.439.912 1.643 1.014.204.102.324.086.444-.051.12-.137.514-.598.651-.804.137-.205.274-.171.459-.102.185.068 1.17.552 1.372.653.202.101.337.151.386.236.049.085.049.495-.095.9z" />
+      <path
+        d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.395A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.163c-1.583 0-3.093-.45-4.4-1.233l-.316-.188-2.964.83.844-2.89-.207-.328A8.125 8.125 0 0 1 3.837 12c0-4.501 3.662-8.163 8.163-8.163s8.163 3.662 8.163 8.163-3.662 8.163-8.163 8.163z" />
+    </svg>
+    <span class="whatsapp-widget-text">Chat with Admissions</span>
+  </a>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

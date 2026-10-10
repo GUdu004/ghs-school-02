@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#fbf9f5" />
+  <rect x="20" y="20" width="560" height="360" rx="8" fill="#f4efe6" stroke="#dfd7cc" stroke-width="1.5" />
+  
+  <!-- Blackboard / Lab Display -->
+  <rect x="60" y="50" width="480" height="150" rx="6" fill="#1c2b39" />
+  <text x="90" y="95" fill="#fbf9f5" font-family="'Newsreader', Georgia, serif" font-size="20px" font-weight="600">STEM &amp; Scientific Exploration</text>
+  <text x="90" y="125" fill="#c86d51" font-family="monospace" font-size="13px">EXPERIMENT 04: LIGHT REFRACTION &amp; OPTICS</text>
+  <text x="90" y="155" fill="#dfd7cc" font-family="-apple-system, sans-serif" font-size="13px">Integrating national curriculum scientific rigor with Quranic reflection on nature.</text>
+  
+  <!-- Lab Workstations -->
+  <rect x="60" y="240" width="140" height="110" rx="4" fill="#ffffff" stroke="#dfd7cc" />
+  <circle cx="130" cy="275" r="18" fill="#eaf2ec" stroke="#2a4736" stroke-width="2" />
+  <text x="95" y="325" font-family="-apple-system, sans-serif" font-size="11px" font-weight="600" fill="#1c2b39">Microscopy &amp; Bio</text>
+
+  <rect x="230" y="240" width="140" height="110" rx="4" fill="#ffffff" stroke="#dfd7cc" />
+  <polygon points="300,260 315,295 285,295" fill="#fce4c4" stroke="#c86d51" stroke-width="2" />
+  <text x="250" y="325" font-family="-apple-system, sans-serif" font-size="11px" font-weight="600" fill="#1c2b39">Chemistry &amp; Matter</text>
+
+  <rect x="400" y="240" width="140" height="110" rx="4" fill="#ffffff" stroke="#dfd7cc" />
+  <rect x="450" y="265" width="40" height="25" rx="3" fill="#e8edf2" stroke="#1c2b39" stroke-width="2" />
+  <text x="420" y="325" font-family="-apple-system, sans-serif" font-size="11px" font-weight="600" fill="#1c2b39">Digital Coding &amp; Math</text>
+</svg>

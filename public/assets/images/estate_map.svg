@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #fbf9f5; }
+      .estate-boundary { fill: #f3eee6; stroke: #dfd7cc; stroke-width: 2; stroke-dasharray: 6 4; }
+      .road { stroke: #e3ded6; stroke-width: 24; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .pathway { stroke: #c86d51; stroke-width: 6; fill: none; stroke-dasharray: 8 6; }
+      .building-ghs { fill: #1c2b39; rx: 8; }
+      .building-mosque { fill: #2a4736; rx: 8; }
+      .building-gate { fill: #8a7b6d; rx: 4; }
+      .tree { fill: #a3b899; opacity: 0.6; }
+      .text-title { font-family: 'Newsreader', Georgia, serif; font-size: 18px; font-weight: 600; fill: #1c2b39; }
+      .text-sub { font-family: -apple-system, sans-serif; font-size: 12px; fill: #6e6459; }
+      .badge-accent { fill: #c86d51; }
+      .badge-text { font-family: monospace; font-size: 11px; fill: #ffffff; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- Estate Boundary -->
+  <rect x="50" y="40" width="700" height="420" rx="16" class="estate-boundary" />
+  <text x="75" y="75" class="text-title">Peace Haven Gated Estate Perimeter</text>
+  <text x="75" y="95" class="text-sub">Controlled Manned Security Access · 24/7 Monitored Child-Safe Zone</text>
+
+  <!-- Access Roads -->
+  <path d="M 50 250 L 220 250 L 380 250 L 600 250 L 750 250" class="road" />
+  <path d="M 380 250 L 380 120 L 520 120" class="road" />
+  <path d="M 380 250 L 380 380 L 520 380" class="road" />
+
+  <!-- Security Gate -->
+  <rect x="80" y="232" width="36" height="36" class="building-gate" />
+  <circle cx="98" cy="250" r="4" fill="#ffffff" />
+  <text x="60" y="295" class="text-sub" font-weight="600">Estate Security Gate 01</text>
+  <text x="60" y="310" class="text-sub">Vehicular & Pedestrian Checkpoint</text>
+
+  <!-- Trees / Greenery -->
+  <circle cx="280" cy="180" r="16" class="tree" />
+  <circle cx="310" cy="170" r="22" class="tree" />
+  <circle cx="290" cy="320" r="20" class="tree" />
+  <circle cx="320" cy="335" r="16" class="tree" />
+  <circle cx="680" cy="150" r="25" class="tree" />
+  <circle cx="660" cy="350" r="20" class="tree" />
+
+  <!-- Protected Pedestrian Corridor -->
+  <path d="M 520 170 L 460 210 L 460 290 L 520 330" class="pathway" />
+
+  <!-- Guided Hearts Schools Campus Building -->
+  <rect x="490" y="90" width="220" height="100" class="building-ghs" />
+  <text x="510" y="130" fill="#fbf9f5" font-family="'Newsreader', Georgia, serif" font-size="16px" font-weight="600">Guided Hearts Schools</text>
+  <text x="510" y="150" fill="#dfd7cc" font-family="-apple-system, sans-serif" font-size="12px">Academic Wing & STEM Laboratories</text>
+  <rect x="510" y="162" width="110" height="18" rx="3" class="badge-accent" />
+  <text x="518" y="175" class="badge-text">CAMPUS SITE</text>
+
+  <!-- Neighborhood Central Mosque -->
+  <rect x="490" y="310" width="220" height="100" class="building-mosque" />
+  <text x="510" y="350" fill="#fbf9f5" font-family="'Newsreader', Georgia, serif" font-size="16px" font-weight="600">Central Community Mosque</text>
+  <text x="510" y="370" fill="#dfd7cc" font-family="-apple-system, sans-serif" font-size="12px">Congregational Dhuhr & Jumu'ah</text>
+  <rect x="510" y="382" width="130" height="18" rx="3" fill="#3d644d" />
+  <text x="518" y="395" class="badge-text">7m SAFE CORRIDOR</text>
+
+  <!-- Legend Pin -->
+  <circle cx="460" cy="250" r="12" fill="#c86d51" />
+  <circle cx="460" cy="250" r="6" fill="#ffffff" />
+  <text x="370" y="275" font-family="monospace" font-size="11px" font-weight="bold" fill="#c86d51">DIRECT PROTECTED LINK</text>
+</svg>

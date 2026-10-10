@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Life & Ethos | Guided Hearts Schools</title>
+  <meta name="description" content="Discover the daily spiritual rhythm, moral character building (Tarbiyyah & Adab), and enriching student life at Guided Hearts Schools.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/css/tokens.css">
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/typography.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/pages.css">
+</head>
+<body data-page-intent="general">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- N1b Nav -->
+  <header class="nav-header">
+    <div class="container nav-inner">
+      <a href="/index.html" class="nav-brand" aria-label="Guided Hearts Schools Home">
+        <img src="/assets/brand/ghs_logo.png" alt="Guided Hearts Schools" class="nav-brand-logo" height="60">
+      </a>
+
+      <nav class="nav-center" aria-label="Main Navigation">
+        <a href="/index.html" class="nav-link">Home</a>
+
+        <!-- About Dropdown -->
+        <div class="nav-item nav-item--dropdown">
+          <button class="nav-link nav-link--dropdown" aria-expanded="false" aria-haspopup="true">
+            About Us
+            <svg class="nav-caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L5 5L9 1"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/about.html" class="nav-drop-item" role="menuitem">
+              <span class="nav-drop-title">Overview &amp; Leadership</span>
+              <span class="nav-drop-desc">Mission, pedagogy &amp; 13+ years leadership</span>
+            </a>
+            <a href="/campus.html" class="nav-drop-item" role="menuitem">
+              <span class="nav-drop-title">Campus &amp; Safety Gallery</span>
+              <span class="nav-drop-desc">Peace Haven Estate &amp; safe mosque corridor</span>
+            </a>
+            <a href="/careers.html" class="nav-drop-item" role="menuitem">
+              <span class="nav-drop-title">Careers &amp; Vacancies</span>
+              <span class="nav-drop-desc">Faculty openings &amp; institutional scaling</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Academics Dropdown -->
+        <div class="nav-item nav-item--dropdown">
+          <button class="nav-link nav-link--dropdown is-active" aria-expanded="false" aria-haspopup="true">
+            Academics
+            <svg class="nav-caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L5 5L9 1"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/academics.html" class="nav-drop-item" role="menuitem">
+              <span class="nav-drop-title">Dual Curriculum Tracks</span>
+              <span class="nav-drop-desc">Hybrid Western &amp; Islamic vs. Full Islamic</span>
+            </a>
+            <a href="/student-life.html" class="nav-drop-item is-active" role="menuitem">
+              <span class="nav-drop-title">Student Life &amp; Ethos</span>
+              <span class="nav-drop-desc">Daily spiritual rhythm, Tarbiyyah &amp; Adab</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/news.html" class="nav-link">News</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/admissions.html" class="btn btn--outline">Admissions</a>
+        <a href="https://wa.me/2348030000000" class="btn btn--accent" data-whatsapp-intent="general">Inquire on WhatsApp</a>
+        <button class="nav-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-panel">
+      <div class="mobile-drawer-header">
+        <span class="nav-brand-name">Menu</span>
+        <button class="mobile-drawer-close" aria-label="Close Navigation Menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="/index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-group">
+          <span class="mobile-nav-heading">About Guided Hearts</span>
+          <a href="/about.html" class="mobile-nav-sublink">Overview &amp; Leadership</a>
+          <a href="/campus.html" class="mobile-nav-sublink">Campus &amp; Safety Gallery</a>
+          <a href="/careers.html" class="mobile-nav-sublink">Careers &amp; Vacancies</a>
+        </li>
+        <li class="mobile-nav-group">
+          <span class="mobile-nav-heading">Academics &amp; Culture</span>
+          <a href="/academics.html" class="mobile-nav-sublink">Dual Curriculum Tracks</a>
+          <a href="/student-life.html" class="mobile-nav-sublink is-active">Student Life &amp; Ethos</a>
+        </li>
+        <li><a href="/admissions.html" class="mobile-nav-link">Admissions &amp; Fees</a></li>
+        <li><a href="/news.html" class="mobile-nav-link">News &amp; Announcements</a></li>
+        <li><a href="/contact.html" class="mobile-nav-link">Contact &amp; Directions</a></li>
+        <li><a href="/legal.html" class="mobile-nav-link">Child Safeguarding</a></li>
+      </ul>
+      <a href="https://wa.me/2348030000000" class="btn btn--whatsapp" data-whatsapp-intent="general" style="width: 100%;">
+        Chat with Admissions Officer
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Student Life Panoramic Hero -->
+    <section class="hero-section hero-section--panoramic">
+      <div class="hero-backdrop" aria-hidden="true">
+        <picture>
+          <source media="(min-width: 900px)" srcset="/assets/images/hero_student_life_assembly_panoramic.webp" type="image/webp">
+          <source media="(min-width: 900px)" srcset="/assets/images/hero_student_life_assembly_panoramic.jpg" type="image/jpeg">
+          <img src="/assets/images/hero_student_life_assembly.jpg"
+            alt="Morning supplication and Adhkar assembly with Nigerian pupils and teachers at Guided Hearts Schools"
+            class="hero-backdrop-img" width="1376" height="768" fetchpriority="high">
+        </picture>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="eyebrow">Tarbiyyah &amp; Culture</span>
+          <h1 class="display-1 hero-headline">A Day of Purpose and Grace.</h1>
+          <p class="lede hero-lede">
+            At Guided Hearts, spiritual uprightness is not an isolated lecture; it is the lived experience of every hour. We structure our days to nurture inquisitive intellects, disciplined habits, and compassionate hearts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Spiritual Rhythm Timeline -->
+    <section class="section-pad">
+      <div class="container container--narrow">
+        <div class="section-head" style="text-align: center;">
+          <span class="eyebrow" style="justify-content: center;">Daily Schedule</span>
+          <h2 class="display-2">The Daily Rhythm of a Guided Hearts Pupil</h2>
+          <p class="lede" style="margin-top: var(--space-2);">
+            A carefully calibrated balance of worship, deep academic work, energetic play, and ethical mentorship.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: var(--space-6); border-left: 2px solid var(--color-paper-border); padding-left: var(--space-6); margin-left: var(--space-4);">
+          <!-- Step 1 -->
+          <div>
+            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; color: var(--color-accent); text-transform: uppercase;">07:45 &bull; Arrival &amp; Morning Adhkar</span>
+            <h3 style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-academic-navy); margin-top: var(--space-1); margin-bottom: var(--space-2);">A Peaceful Beginning</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              Pupils are greeted warmly at our gated entry, place their materials in lockers, and gather for morning remembrances (Adhkar), supplication, and brief moral reflections.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div>
+            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; color: var(--color-accent); text-transform: uppercase;">08:15 &bull; Academic &amp; STEM Block</span>
+            <h3 style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-academic-navy); margin-top: var(--space-1); margin-bottom: var(--space-2);">Analytical Discovery</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              High-focus morning sessions covering Mathematics, English literacy, foundational sciences, and computing skills taught by qualified specialist educators.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div>
+            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; color: var(--color-accent); text-transform: uppercase;">10:30 &bull; Mid-Morning Break &amp; Play</span>
+            <h3 style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-academic-navy); margin-top: var(--space-1); margin-bottom: var(--space-2);">Social Recreation</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              Supervised outdoor play in our enclosed courtyard, wholesome snacks, and social interaction under watchful teacher guidance.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div>
+            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; color: var(--color-accent); text-transform: uppercase;">11:00 &bull; Quranic Tahfeez &amp; Arabic Immersion</span>
+            <h3 style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-academic-navy); margin-top: var(--space-1); margin-bottom: var(--space-2);">Connecting with the Revelation</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              Small recitation circles (Halaqat) where pupils memorize, revise, and refine pronunciation (Tajweed) and conversational Arabic according to their individualized learning pace.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div>
+            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; color: var(--color-islamic-forest); text-transform: uppercase;">13:00 &bull; Wudu &amp; Congregational Dhuhr Prayer</span>
+            <h3 style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-academic-navy); margin-top: var(--space-1); margin-bottom: var(--space-2);">Worship in the Central Mosque</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              Pupils perform ablution with care and walk via our 7m protected estate corridor to join the congregation at the neighborhood central mosque, learning the sanctity of communal prayer.
+            </p>
+          </div>
+
+          <!-- Step 6 -->
+          <div>
+            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; color: var(--color-accent); text-transform: uppercase;">13:45 &bull; Lunch &amp; Adab Circle</span>
+            <h3 style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-academic-navy); margin-top: var(--space-1); margin-bottom: var(--space-2);">Character &amp; Table Manners</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              Wholesome lunch accompanied by lessons in gratitude, mindful eating, table etiquettes, and short stories from the Seerah and 40 Hadith of Imam An-Nawawi.
+            </p>
+          </div>
+
+          <!-- Step 7 -->
+          <div>
+            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; color: var(--color-accent); text-transform: uppercase;">15:30 &bull; Dismissal &amp; Verified Pickup</span>
+            <h3 style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-academic-navy); margin-top: var(--space-1); margin-bottom: var(--space-2);">Secure Departure</h3>
+            <p class="prose" style="font-size: var(--text-sm);">
+              Closing supplications and organized departure adhering strictly to our authorized guardian identification protocol.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Character & Bullying Prevention Framework -->
+    <section class="section-pad" style="background-color: var(--color-paper-muted); border-top: 1px solid var(--color-paper-border);">
+      <div class="container">
+        <div class="grid-track-safe" style="display: grid; grid-template-columns: 6fr 6fr; gap: var(--space-8); align-items: center;">
+          <div>
+            <figure class="hero-figure">
+              <img src="/assets/images/student_tarbiyyah_adab.jpg" alt="Nigerian school pupils demonstrating kindness, companionship and adab in courtyard" width="700" height="525" loading="lazy">
+              <figcaption class="hero-caption">
+                Spiritual Character Building &bull; Adab &amp; Akhlaq
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="prose">
+            <span class="eyebrow">Moral Architecture</span>
+            <h2 class="display-2" style="margin-bottom: var(--space-4);">Zero Tolerance for Bullying. Deep Cultivation of Adab.</h2>
+            <p>
+              We believe a child cannot learn effectively if they feel threatened or marginalized. Guided Hearts Schools enforces an unyielding anti-bullying policy rooted in the Islamic principle that every believer is a brother to another.
+            </p>
+            <p>
+              Teachers actively model and reward gentleness, patience, humility, and respectful speech. Disagreements are resolved through guided mediation and Islamic principles of mutual forgiveness and accountability.
+            </p>
+            <div style="margin-top: var(--space-6);">
+              <a href="/legal.html" class="btn btn--outline">Read Child Safeguarding &amp; Welfare Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ft5 Statement Footer -->
+  <footer class="foot-stmt">
+    <div class="container">
+      <p class="foot-stmt__line">Raising scholars of moral uprightness and intellectual distinction.</p>
+      <div class="foot-stmt__grid">
+        <div>
+          <h4 class="foot-stmt__col-title">Campus Location</h4>
+          <p class="prose" style="font-size: var(--text-sm); color: oklch(0.820 0.015 85); margin-bottom: var(--space-2);">
+            Peace Haven Gated Estate, Off Central Mosque Road, Lagos.
+          </p>
+          <p class="prose" style="font-size: var(--text-xs); color: var(--color-accent);">
+            &bull; Manned Estate Security &bull; 7m Mosque Link
+          </p>
+        </div>
+        <div>
+          <h4 class="foot-stmt__col-title">Navigation</h4>
+          <ul class="foot-stmt__links">
+            <li><a href="/index.html" class="foot-stmt__link">Home</a></li>
+            <li><a href="/about.html" class="foot-stmt__link">About Us</a></li>
+            <li><a href="/academics.html" class="foot-stmt__link">Academics</a></li>
+            <li><a href="/admissions.html" class="foot-stmt__link">Admissions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="foot-stmt__col-title">Governance</h4>
+          <ul class="foot-stmt__links">
+            <li><a href="/about.html" class="foot-stmt__link">Leadership Team</a></li>
+            <li><a href="/careers.html" class="foot-stmt__link">Teaching Vacancies</a></li>
+            <li><a href="/legal.html" class="foot-stmt__link">Safeguarding Policy</a></li>
+            <li><a href="/news.html" class="foot-stmt__link">Announcements</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="foot-stmt__col-title">Connect</h4>
+          <ul class="foot-stmt__links">
+            <li><a href="https://wa.me/2348030000000" class="foot-stmt__link" data-whatsapp-intent="general">WhatsApp Admissions</a></li>
+            <li><a href="/contact.html" class="foot-stmt__link">Get Directions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-stmt__meta">
+        <span>&copy; 2026 Guided Hearts Schools. All rights reserved.</span>
+        <a href="/legal.html" style="color: inherit; text-decoration: underline;">Privacy Policy &bull; Child Safeguarding Code</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348030000000" class="whatsapp-widget" data-whatsapp-intent="general" aria-label="Chat with Guided Hearts Admissions on WhatsApp">
+    <svg class="whatsapp-widget-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.074-2.18-.54-1.894-.783-3.125-2.723-3.22-2.85-.095-.128-.769-.997-.769-1.929 0-.931.488-1.391.662-1.579.174-.188.38-.235.506-.235.126 0 .253.002.364.007.119.006.277-.045.435.334.162.388.552 1.344.6 1.442.049.098.082.213.016.342-.066.13-.099.21-.197.324-.099.115-.208.257-.297.345-.102.102-.208.213-.09.417.119.204.529.873 1.135 1.413.781.696 1.439.912 1.643 1.014.204.102.324.086.444-.051.12-.137.514-.598.651-.804.137-.205.274-.171.459-.102.185.068 1.17.552 1.372.653.202.101.337.151.386.236.049.085.049.495-.095.9z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.395A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.163c-1.583 0-3.093-.45-4.4-1.233l-.316-.188-2.964.83.844-2.89-.207-.328A8.125 8.125 0 0 1 3.837 12c0-4.501 3.662-8.163 8.163-8.163s8.163 3.662 8.163 8.163-3.662 8.163-8.163 8.163z"/></svg>
+    <span class="whatsapp-widget-text">Chat with Admissions</span>
+  </a>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Hallmark · Typography Hierarchy & 2+1 Discipline */
+
+/* Display Headings (STRICTLY ROMAN - No Italic Headers) */
+h1, h2, h3, h4, h5, h6,
+.display-hero, .display-1, .display-2, .display-3 {
+  font-family: var(--font-display);
+  font-style: normal !important; /* Hallmark discipline 6: headings are strictly roman */
+  font-weight: 600;
+  color: var(--color-academic-navy);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  /* Hallmark gate 51: headers wrap inside long words on narrow viewports */
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.display-hero {
+  font-size: var(--text-hero);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+h1, .display-1 {
+  font-size: var(--text-3xl);
+}
+
+h2, .display-2 {
+  font-size: var(--text-2xl);
+}
+
+h3, .display-3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+
+/* Eyebrow Label / Micro-Tag */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-3);
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5px;
+  background-color: var(--color-accent);
+}
+
+/* Lead Paragraph / Subhead */
+.lede {
+  font-size: var(--text-lg);
+  line-height: 1.5;
+  color: var(--color-ink-muted);
+  max-width: var(--measure-prose);
+}
+
+/* Prose content */
+.prose {
+  max-width: var(--measure-prose);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-ink);
+}
+
+.prose p + p {
+  margin-top: var(--space-4);
+}
+
+.prose strong {
+  font-weight: 600;
+  color: var(--color-academic-navy);
+}
+
+.prose em {
+  font-style: italic; /* Italic survives only in body prose */
+}
+
+/* Academic Ledger Pullquote */
+.editorial-quote {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  line-height: 1.35;
+  color: var(--color-academic-navy);
+  padding-left: var(--space-6);
+  border-left: 2px solid var(--color-accent);
+  margin-block: var(--space-8);
+  font-style: normal;
+}
+
+.editorial-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-ink-subtle);
+  margin-top: var(--space-3);
+}
+
+/* Hairline rule */
+.hairline-rule {
+  border: none;
+  height: 1px;
+  background-color: var(--color-paper-border);
+  margin-block: var(--space-8);
+}

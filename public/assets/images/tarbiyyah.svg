@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#fbf9f5" />
+  <rect x="20" y="20" width="560" height="360" rx="8" fill="#f4efe6" stroke="#dfd7cc" stroke-width="1.5" />
+  
+  <!-- Mosque Library Architecture -->
+  <path d="M 150 340 L 150 160 Q 300 80 450 160 L 450 340 Z" fill="#ffffff" stroke="#dfd7cc" />
+  
+  <!-- Quran / Book Stand Motif -->
+  <path d="M 240 280 L 300 240 L 360 280 L 300 320 Z" fill="#c86d51" opacity="0.15" />
+  <path d="M 260 250 Q 300 230 340 250 L 340 290 Q 300 270 260 290 Z" fill="#2a4736" />
+  <line x1="300" y1="230" x2="300" y2="290" stroke="#fbf9f5" stroke-width="2" />
+
+  <text x="300" y="145" text-anchor="middle" font-family="'Newsreader', Georgia, serif" font-size="20px" font-weight="600" fill="#1c2b39">Tarbiyyah &amp; Spiritual Uprightness</text>
+  <text x="300" y="175" text-anchor="middle" font-family="monospace" font-size="12px" fill="#c86d51">QURANIC MEMORIZATION · AKHLAQ · ADAB</text>
+
+  <text x="300" y="325" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12px" fill="#6e6459">Structured daily reflection, prayer discipline, and moral mentorship.</text>
+</svg>

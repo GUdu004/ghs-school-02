@@ -1,0 +1,748 @@
+/* Hallmark · Components (8-State Verified, N1b Nav, Ft5 Footer, WhatsApp CRM) */
+
+/* -------------------------------------------------------------
+   BUTTONS & ACTIONS (MANDATORY 8-STATE IMPLEMENTATION)
+   States: default · hover · focus-visible · active · disabled · loading · error · success
+   ------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.75rem 1.35rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+  position: relative;
+  /* Hallmark gate 49: no two-line clickable buttons */
+  overflow: hidden;
+}
+
+/* 1. Default Variants */
+.btn--accent {
+  background-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+  border-color: var(--color-accent);
+}
+
+.btn--navy {
+  background-color: var(--color-academic-navy);
+  color: var(--color-accent-contrast);
+  border-color: var(--color-academic-navy);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-academic-navy);
+  border-color: var(--color-academic-navy);
+}
+
+.btn--whatsapp {
+  background-color: #25D366;
+  color: #0b2214;
+  border-color: #25D366;
+}
+
+/* 2. Hover State */
+.btn--accent:hover,
+.btn--accent.is-hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px oklch(0.700 0.130 52 / 0.25);
+}
+
+.btn--navy:hover,
+.btn--navy.is-hover {
+  background-color: var(--color-academic-hover);
+  border-color: var(--color-academic-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px oklch(0.220 0.045 250 / 0.25);
+}
+
+.btn--outline:hover,
+.btn--outline.is-hover {
+  background-color: var(--color-paper-muted);
+  border-color: var(--color-academic-navy);
+  transform: translateY(-1px);
+}
+
+.btn--outline.is-active {
+  background-color: var(--color-academic-navy);
+  color: var(--color-accent-contrast);
+  border-color: var(--color-academic-navy);
+}
+
+.btn--outline.is-active:hover {
+  background-color: var(--color-academic-hover);
+  border-color: var(--color-academic-hover);
+}
+
+.btn--whatsapp:hover,
+.btn--whatsapp.is-hover {
+  background-color: #20ba5a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+}
+
+/* 3. Focus-Visible State */
+.btn:focus-visible,
+.btn.is-focus {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+/* 4. Active (Pressed) State */
+.btn:active,
+.btn.is-active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* 5. Disabled State */
+.btn:disabled,
+.btn[aria-disabled="true"],
+.btn.is-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+}
+
+/* 6. Loading State */
+.btn[data-state="loading"],
+.btn.is-loading {
+  pointer-events: none;
+  color: transparent !important;
+}
+
+.btn[data-state="loading"]::after,
+.btn.is-loading::after {
+  content: "";
+  position: absolute;
+  width: 1.1rem;
+  height: 1.1rem;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.55rem;
+  margin-left: -0.55rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: btn-spin 0.6s linear infinite;
+}
+
+@keyframes btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 7. Error State */
+.btn[data-state="error"],
+.btn.is-error {
+  background-color: var(--color-error);
+  border-color: var(--color-error);
+  color: #ffffff;
+}
+
+/* 8. Success State */
+.btn[data-state="success"],
+.btn.is-success {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+  color: #ffffff;
+}
+
+/* -------------------------------------------------------------
+   N1b NAVIGATION: CANONICAL 3-SECTION INSTITUTIONAL NAV
+   ------------------------------------------------------------- */
+.nav-header {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background-color: color-mix(in oklch, var(--color-paper) 85%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid var(--color-paper-border);
+  transition: background-color var(--duration-base), border-color var(--duration-base), box-shadow var(--duration-base);
+}
+
+.nav-header.is-scrolled {
+  background-color: color-mix(in oklch, var(--color-paper) 95%, transparent);
+  box-shadow: var(--shadow-subtle);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.75rem;
+  gap: var(--space-4);
+}
+
+/* Hard-left Brand */
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-brand-logo {
+  height: 60px;
+  width: auto;
+  max-width: 304px;
+  object-fit: contain;
+}
+
+.nav-brand-text {
+  display: none;
+}
+
+/* Centred Nav Cluster */
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-ink);
+  text-decoration: none;
+  padding: var(--space-2) var(--space-2);
+  position: relative;
+  transition: color var(--duration-fast) var(--ease-standard);
+  /* Hallmark gate 49: no two-line clickable link */
+  white-space: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+.nav-link.is-active {
+  color: var(--color-academic-navy);
+  font-weight: 600;
+}
+
+.nav-link.is-active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+/* Dropdown Caret */
+.nav-caret {
+  transition: transform var(--duration-fast) var(--ease-standard), color var(--duration-fast);
+  color: var(--color-ink-muted);
+  flex-shrink: 0;
+}
+
+/* Dropdown Container */
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 270px;
+  background-color: var(--color-paper-card);
+  border: 1px solid var(--color-paper-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px) scale(0.98);
+  pointer-events: none;
+  transition:
+    opacity var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard),
+    visibility var(--duration-fast);
+  z-index: 1000;
+}
+
+/* Invisible bridge so cursor doesn't fall through gap between trigger and dropdown */
+.nav-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
+/* Dropdown Open Trigger: Hover, Focus-Within, or Active Class */
+.nav-item--dropdown:hover .nav-dropdown,
+.nav-item--dropdown:focus-within .nav-dropdown,
+.nav-item--dropdown.is-open .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.nav-item--dropdown:hover .nav-caret,
+.nav-item--dropdown:focus-within .nav-caret,
+.nav-item--dropdown.is-open .nav-caret {
+  transform: rotate(180deg);
+  color: var(--color-accent);
+}
+
+/* Dropdown Items */
+.nav-drop-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.nav-drop-item:hover,
+.nav-drop-item:focus-visible {
+  background-color: var(--color-paper-muted);
+}
+
+.nav-drop-item.is-active {
+  background-color: var(--color-accent-wash);
+}
+
+.nav-drop-title {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-academic-navy);
+  line-height: 1.25;
+}
+
+.nav-drop-item:hover .nav-drop-title,
+.nav-drop-item:focus-visible .nav-drop-title {
+  color: var(--color-accent);
+}
+
+.nav-drop-desc {
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+  line-height: 1.35;
+  margin-top: 2px;
+}
+
+/* Hard-Right Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+/* Mobile Toggle Hamburger */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--color-paper-border);
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--color-academic-navy);
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: oklch(0.180 0.030 250 / 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-base) var(--ease-standard), visibility var(--duration-base);
+}
+
+.mobile-drawer.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(85vw, 360px);
+  background-color: var(--color-paper);
+  box-shadow: var(--shadow-modal);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform var(--duration-base) var(--ease-standard);
+  overflow-y: auto;
+}
+
+.mobile-drawer.is-open .mobile-drawer-panel {
+  transform: translateX(0);
+}
+
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-paper-border);
+  margin-bottom: var(--space-6);
+}
+
+.mobile-drawer-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: var(--space-2);
+  color: var(--color-ink);
+}
+
+.mobile-nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-8);
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: var(--space-3) 0;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--color-academic-navy);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-paper-divider);
+}
+
+.mobile-nav-link.is-active {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.mobile-nav-group {
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--color-paper-divider);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav-heading {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+}
+
+.mobile-nav-sublink {
+  display: block;
+  padding: var(--space-2) 0 var(--space-2) var(--space-3);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  color: var(--color-ink);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--duration-fast);
+}
+
+.mobile-nav-sublink:hover,
+.mobile-nav-sublink:focus-visible {
+  color: var(--color-accent);
+}
+
+.mobile-nav-sublink.is-active {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+@media (max-width: 960px) {
+
+  .nav-center,
+  .nav-actions .btn--outline {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-actions .btn {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------------------
+   PERSISTENT STICKY WHATSAPP CRM WIDGET
+   Anchored in mobile thumb zone
+   ------------------------------------------------------------- */
+.whatsapp-widget {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 850;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: #25D366;
+  color: #0c2b18;
+  padding: 0.75rem 1.15rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  transition: transform var(--duration-fast) var(--ease-standard), box-shadow var(--duration-fast);
+}
+
+.whatsapp-widget:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.55);
+}
+
+.whatsapp-widget-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-widget {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.65rem 1rem;
+  }
+
+  .whatsapp-widget-text {
+    font-size: 0.8125rem;
+  }
+}
+
+/* -------------------------------------------------------------
+   Ft5 STATEMENT FOOTER
+   ------------------------------------------------------------- */
+.foot-stmt {
+  background-color: var(--color-navy-surface);
+  color: oklch(0.920 0.015 85);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-10);
+  border-top: 1px solid oklch(0.280 0.035 250);
+}
+
+.foot-stmt__line {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  line-height: 1.15;
+  color: oklch(0.985 0.008 85);
+  max-width: 32ch;
+  margin-bottom: var(--space-10);
+}
+
+.foot-stmt__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-8);
+  padding-bottom: var(--space-12);
+  border-bottom: 1px solid oklch(0.280 0.035 250);
+}
+
+.foot-stmt__col-title {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-4);
+}
+
+.foot-stmt__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.foot-stmt__link {
+  color: oklch(0.820 0.015 85);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  transition: color var(--duration-fast);
+}
+
+.foot-stmt__link:hover {
+  color: var(--color-accent);
+}
+
+.foot-stmt__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-8);
+  font-size: var(--text-xs);
+  color: oklch(0.600 0.020 250);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+@media (max-width: 820px) {
+  .foot-stmt__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}
+
+/* -------------------------------------------------------------
+   ACCESSIBLE ACCORDION (FAQ & Notices)
+   ------------------------------------------------------------- */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-paper-border);
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--color-paper-border);
+}
+
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-5);
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-academic-navy);
+  cursor: pointer;
+}
+
+.accordion-trigger:focus-visible {
+  outline: 2px solid var(--color-focus);
+}
+
+.accordion-icon {
+  font-size: 1.25rem;
+  transition: transform var(--duration-base) var(--ease-standard);
+  color: var(--color-accent);
+}
+
+.accordion-trigger[aria-expanded="true"] .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--duration-base) var(--ease-standard), visibility var(--duration-base);
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.accordion-panel.is-open {
+  grid-template-rows: 1fr;
+  visibility: visible;
+}
+
+.accordion-content {
+  min-height: 0;
+  overflow: hidden;
+  padding-bottom: var(--space-5);
+  color: var(--color-ink-muted);
+  font-size: var(--text-base);
+  line-height: 1.6;
+}
+
+/* -------------------------------------------------------------
+   DUAL-CURRICULUM COMPARISON LEDGER
+   ------------------------------------------------------------- */
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+}
+
+.curriculum-card {
+  background-color: var(--color-paper-card);
+  border: 1px solid var(--color-paper-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+}
+
+.curriculum-card--featured {
+  border-color: var(--color-accent-border);
+  box-shadow: 0 4px 20px oklch(0.700 0.130 52 / 0.1);
+  position: relative;
+}
+
+.curriculum-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-accent-wash);
+  color: var(--color-accent);
+  margin-bottom: var(--space-4);
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .curriculum-grid {
+    grid-template-columns: 1fr;
+  }
+}
